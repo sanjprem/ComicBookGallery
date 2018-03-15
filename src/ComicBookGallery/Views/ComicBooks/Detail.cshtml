@@ -6,12 +6,12 @@
     ViewBag.ShowBackBar = true;
 }
 
-<h2>@Model.SeriesTitle #@Model.IssueNumber</h2>
+<h2>@Model.Series.Title #@Model.IssueNumber</h2>
 
 <div class="row">
     <div class="col-md-6">
         <div class="well">
-            <h5><label>Series Title:</label> @Model.SeriesTitle</h5>
+            <h5><label>Series Title:</label> @(Model.Series != null ? Model.Series.Title : "N/A")</h5>
             <h5><label>Issue #:</label> @Model.IssueNumber</h5>
             <h5><label>Favorite:</label> @(Model.Favourite ? "Yes" : "No")</h5>
             @if (@Model.Artists.Length > 0)
