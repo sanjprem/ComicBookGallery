@@ -106,6 +106,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ComicBookController.cs" />
+    <Compile Include="Controllers\SeriesController.cs" />
     <Compile Include="Data\ComicBookRepository.cs" />
     <Compile Include="Data\Data.cs" />
     <Compile Include="Data\SeriesRepository.cs" />
@@ -128,6 +129,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\ComicBooks\Index.cshtml" />
+    <Content Include="Views\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -137,6 +139,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Series\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

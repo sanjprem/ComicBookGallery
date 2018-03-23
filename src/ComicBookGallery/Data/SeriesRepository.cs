@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ComicBookGallery.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -14,8 +15,8 @@ namespace ComicBookGallery.Data
 
         public Series GetSeriesDetail(int id)
         {
-            SeriesRepository seriesToReturn = null;
-            
+            Series seriesToReturn = null;
+
             foreach (var series in Data.Series)
             {
                 if (series.Id == id)
